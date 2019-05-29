@@ -12,11 +12,11 @@ import org.springframework.stereotype.Controller;
  */
 //包扫描
 @ComponentScan(
-        value = "com.hao.persistence",excludeFilters = {
-        @ComponentScan.Filter(type=FilterType.ANNOTATION,classes={Controller.class}),
-        @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE,classes = {BookService.class}),
-        @ComponentScan.Filter(type=FilterType.CUSTOM,classes={MyTypeFilter.class})
-        })
+    value = "com.hao.persistence", excludeFilters = {
+    @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = {Controller.class}),
+    @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, classes = {BookService.class}),
+    @ComponentScan.Filter(type = FilterType.CUSTOM, classes = {MyTypeFilter.class})
+})
 //定义配置类，可替换xml文件
 @Configuration
 //excludeFilters = Filter[],指定扫描组件的时候按照一定规则过滤某些组件
@@ -28,12 +28,11 @@ import org.springframework.stereotype.Controller;
 //FilterType.CUSTOM,只用自定义规则
 public class MainConfig {
 
-    //Ioc容器中注入bean对象
-    @Bean("person")
-    public Person person1(){
-        return new Person("allen","man");
-    }
-
+  //Ioc容器中注入bean对象
+  @Bean("person")
+  public Person person1() {
+    return new Person("allen", "man");
+  }
 
 
 }

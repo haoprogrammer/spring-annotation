@@ -10,27 +10,27 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class BookDao {
 
-    private String name = "Java";
+  private String name = "Java";
 
-    public BookDao(String name) {
-        this.name = name;
-    }
+  public BookDao(String name) {
+    this.name = name;
+  }
 
-    public BookDao() {
-    }
+  public BookDao() {
+  }
 
-    public String getName() {
-        return name;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    @Override
-    public String toString() {
-        return "BookDao{" +
-                "name='" + name + '\'' +
-                '}';
-    }
+  @Override
+  public String toString() {
+    return "BookDao{" +
+        "name='" + name + '\'' +
+        '}';
+  }
 }

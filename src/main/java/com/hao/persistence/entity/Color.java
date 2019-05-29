@@ -6,4 +6,5 @@ package com.hao.persistence.entity;
  * @version: 1.0
  */
 public class Color {
+
 }
